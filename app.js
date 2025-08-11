@@ -22,3 +22,14 @@ function mostrarLista() {
         lista.innerHTML += `<li>${amigo}</li>`;
     }
 }
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("No hay amigos para sortear");
+        return;
+    } else {
+        const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+        const amigoSorteado = amigos[indiceAleatorio];
+        document.getElementById("resultado").innerHTML = `<li>El amigo sorteado es: <strong>${amigoSorteado}</strong></li>`;
+    }
+}
