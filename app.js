@@ -1,10 +1,20 @@
 // Array para almacenar los nombres
 let amigos = []; 
 
+// Normaliza el nombre
+function normalizarNombre(nombre) {
+    // Elimina espacios sobrantes
+    nombre = nombre.trim();
+    // Convierte todo a minúsculas
+    nombre = nombre.toLowerCase();
+    // Pone la primera letra en mayúscula
+    return nombre.charAt(0).toUpperCase() + nombre.slice(1);
+}
+
 // Agregar un nuevo amigo
 function agregarAmigo(){
     const input = document.getElementById("amigo");
-    const nombre = input.value.trim();
+    const nombre = normalizarNombre(input.value);
 
     if (!nombre) {
         alert("Por favor, inserte un nombre.");
