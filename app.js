@@ -22,22 +22,30 @@ function agregarAmigo(){
     }
     if (!esNombreValido(nombre)) {
         alert("Por favor, escribe solo letras (sin números ni símbolos)");
+        focalizarInput(input);
         return;
     }
     if (estaRepetido(nombre)) {
         alert("Ese nombre ya fue agregado");
+        focalizarInput(input);
         return;
     }
     if (esLongitudValido(nombre)){
         alert("El nombre no puede tener más de 15 caracteres.");
+        focalizarInput(input);
         return;
     };
 
     amigos.push(nombre);
     mostrarLista();
+    focalizarInput(input);
+    contarAmigos(amigos);
+}
+
+// Focaliza
+function focalizarInput(input) {
     input.value = "";
     input.focus();
-    contarAmigos(amigos);
 }
 
 // Contador de amigos
