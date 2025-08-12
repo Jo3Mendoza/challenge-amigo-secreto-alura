@@ -63,3 +63,10 @@ function sortearAmigo() {
     const amigoSorteado = amigos[indiceAleatorio];
     document.getElementById("resultado").innerHTML = `<li>El amigo sorteado es: <strong>${amigoSorteado}</strong></li>`;
 }
+
+// Limpiar la lista
+function limpiarLista() {
+    amigos = []; // Vaciar el arreglo
+    document.getElementById("listaAmigos").innerHTML = ""; // Limpiar lista en pantalla
+    document.getElementById("resultado").innerHTML = ""; // Limpiar resultado del sorteo
+}
