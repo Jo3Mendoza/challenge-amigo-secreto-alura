@@ -28,10 +28,28 @@ function agregarAmigo(){
         alert("Ese nombre ya fue agregado");
         return;
     }
+    if (esLongitudValido(nombre)){
+        alert("El nombre no puede tener más de 15 caracteres.");
+        return;
+    };
+
     amigos.push(nombre);
     mostrarLista();
     input.value = "";
     input.focus();
+    contarAmigos(amigos);
+}
+
+// Contador de amigos
+function contarAmigos(amigos) {
+    document.getElementById("contador").textContent = `Total de amigos: ${amigos.length}`;
+}
+
+// Validar longitud
+function esLongitudValido(nombre) {
+    if (nombre.length > 15) {
+        return true
+    }
 }
 
 // Validar que solo tenga letras y espacios
@@ -69,4 +87,5 @@ function limpiarLista() {
     amigos = []; // Vaciar el arreglo
     document.getElementById("listaAmigos").innerHTML = ""; // Limpiar lista en pantalla
     document.getElementById("resultado").innerHTML = ""; // Limpiar resultado del sorteo
+    document.getElementById("contador").textContent = `Total de amigos: 0`;
 }

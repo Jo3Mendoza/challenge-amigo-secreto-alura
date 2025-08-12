@@ -174,3 +174,15 @@ button.limpiar-btn {
 button.limpiar-btn:hover {
     background-color: #d32f2f; /* Rojo más oscuro al pasar el mouse */
 }
+
+#contador {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
