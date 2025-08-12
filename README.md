@@ -1,28 +1,75 @@
-# 🌐 Aplicación Web Responsive — Startup Innovadora
+# 🎁 Juego del Amigo Secreto
 
-![Responsive Design](https://img.shields.io/badge/Responsive-Yes-brightgreen?style=flat-square)
 ![HTML5](https://img.shields.io/badge/HTML5-orange?style=flat-square)
 ![CSS3](https://img.shields.io/badge/CSS3-blue?style=flat-square)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=flat-square)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen?style=flat-square)
 
-Aplicación web **totalmente responsive** diseñada para una startup de tecnología con el objetivo de revolucionar la interacción con el contenido en línea.  
-Se adapta perfectamente a cualquier dispositivo, desde **smartphones** hasta **pantallas de escritorio**, asegurando una experiencia accesible y agradable para todos los usuarios.
-
----
-
-## 🚀 Características principales
-- **Diseño responsive** con *Media Queries* optimizados (`max-width: 700px`).
-- **Interfaz limpia y minimalista** para mejorar la legibilidad.
-- **Compatibilidad cross-browser**.
-- Uso de **HTML5 semántico** y **CSS3 moderno**.
-- **Rendimiento optimizado** para dispositivos móviles.
-- **Imágenes adaptativas** utilizando unidades relativas (`vw`, `%`).
+Un divertido juego en el que puedes **ingresar nombres de tus amigos** y la aplicación elegirá **al azar** quién será el *Amigo Secreto*.  
+Este proyecto pone en práctica varios conceptos fundamentales de programación en **JavaScript**, junto con diseño y estilos en **HTML** y **CSS**.  
+Es ideal para aprender, practicar y también para **mejorarlo con nuevas funcionalidades**.
 
 ---
 
-## 📱 Breakpoints clave
-```css
-/* Pantallas pequeñas (móviles y tablets en vertical) */
-@media (max-width: 700px) {
-  /* Estilos adaptados para pantallas pequeñas */
-}
+## 🚀 Características
+- Permite agregar nombres a una lista.
+- Normaliza los nombres ingresados.
+- Valida que los nombres no tengan numeros, caracteres especiales o este vacio.
+- Valida que no se ingresen nombres repetidos a la lista.
+- La longitud maxima de un nombre debe ser 15 caracteres.
+- Selección aleatoria del *Amigo Secreto*.
+- Cuenta la cantidad de amigos en la lista.
+- Limpia a lista para volver a empezar.
+- Interfaz amigable y minimalista.
+
+---
+
+## 🖥️ Software necesario
+Para ejecutar y/o mejorar este proyecto, necesitas:
+
+- [**Visual Studio Code**](https://code.visualstudio.com/) — Editor de código recomendado.
+- **Extensión Live Server** para VS Code — Permite ejecutar el proyecto localmente y ver cambios en tiempo real.
+- Un navegador web moderno (recomendado [**Google Chrome**](https://www.google.com/chrome/) o [**Mozilla Firefox**](https://www.mozilla.org/firefox/)).
+
+---
+
+## 📂 Estructura del proyecto
+```plaintext
+.
+├── index.html       # Estructura base del juego
+├── style.css        # Estilos y diseño
+├── app.js           # Lógica del juego en JavaScript
+├── assets/          # Capturas y recursos visuales
+└── README.md        # Documentación del proyecto
+
+---
+
+## 📚 Conceptos de programación practicados
+- **DOM Manipulation** en JavaScript.
+- Uso de **arrays**.
+- Generación de números aleatorios (`Math.random()` y `Math.floor()`).
+- Estilos con **CSS3**.
+- Separación de estructura, diseño y lógica (HTML, CSS, JS).
+
+---
+
+## 💡 Ideas para mejorar el juego
+- 🎨 **Diseño visual**: agregar animaciones o temas personalizables.
+- 📱 **Compatibilidad móvil**: optimizar para pantallas pequeñas.
+- 📊 **Historial de sorteos**: mostrar resultados anteriores.
+- 🌎 **Modo multijugador online**: jugar con amigos a través de internet.
+
+---
+
+## 📜 Licencia
+Este proyecto está bajo la licencia MIT.
+Puedes usarlo, modificarlo y distribuirlo libremente.
+
+---
+
+## 👩‍💻 Autor
+Desarrollado con ❤️ por Jo3
+📧 Contacto: onaiwin@gmail.com
+🌐 Portafolio: https://github.com/Jo3Mendoza/
+
+
