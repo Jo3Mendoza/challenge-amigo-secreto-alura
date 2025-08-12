@@ -41,6 +41,7 @@ Para ejecutar y/o mejorar este proyecto, necesitas:
 ├── app.js           # Lógica del juego en JavaScript
 ├── assets/          # Capturas y recursos visuales
 └── README.md        # Documentación del proyecto
+```
 
 ---
 
