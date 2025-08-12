@@ -70,7 +70,7 @@ Puedes usarlo, modificarlo y distribuirlo libremente.
 
 ## 👩‍💻 Autor
 Desarrollado con ❤️ por Jo3
-📧 Contacto: onaiwin@gmail.com
-🌐 Portafolio: https://github.com/Jo3Mendoza/
+- 📧 Contacto: onaiwin@gmail.com
+- 🌐 Portafolio: https://jo3mendoza.github.io/challenge-amigo-secreto-alura/
 
 
